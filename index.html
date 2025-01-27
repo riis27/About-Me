@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>About Me</title>
-    <head><link rel="stylesheet" href="./aboutme.css">
-    </head>
+    <head><link rel="stylesheet" media="screen and (max-width:480px)" href="./mobile.css">  <link rel="stylesheet" media="screen and (min-width:480px)" href="./style.css"></head>
     <style>
         h1{
             font-size: 50px;
@@ -32,7 +31,16 @@
             font-size: smaller;
         }
         .timeline {
-            text-align: left; 
+            text-align: center; 
+            
+        }
+        .link-buttons{
+            display: inline-block;
+            background-color: transparent; 
+            color: #fff; 
+            text-align: center;
+            
+    
         }
         .button {
             display: inline-block;
@@ -46,7 +54,7 @@
             transition: background-color 0.3s ease;
         }
         .button:hover {
-            background-color: grey; /
+            background-color: grey;
         }
     </style>
     <header>
