@@ -45,7 +45,7 @@ h1 {
 }
 
 .image-container img {
-    max-width: 300px;
+    max-width: 200px;
     /* Set max-width here */
     height: auto;
     /* Maintain aspect ratio */
@@ -58,7 +58,7 @@ h1 {
 
 h2 {
     font-family: 'Great Vibes', cursive;
-      font-size: 2.5em;
+      font-size: 1.5em;
     color: #333;
     text-align: center;
     margin: 20px 0;
