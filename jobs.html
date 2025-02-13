@@ -1,110 +1,167 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Job History</title>
-<style>
-body {
-            font-family: 'Gill Sans';
-            font-size: larger;
-            background-color: #f0f0f0;
-            background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg'); 
-            background-size: cover;
-            background-position: center;
-            color: #333;
-            text-align: center;
-        }
+  <title>Job History</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', sans-serif; 
+      font-size: larger;
+      background-color: #f0f0f0;
+      background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      text-align: center;
+      margin: 0; 
+      padding: 0; 
+      display: flex; 
+      flex-direction: column;
+      min-height: 100vh; 
+    }
 
-.photo-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    .content-wrapper { 
+      width: 80%; 
+      max-width: 960px; 
+      margin: 20px auto; 
+      background-color: rgba(255, 255, 255, 0.85); 
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
 
-.photo-frame {
-  border: 5px solid #fff;
-  border-radius: 5px;
-  padding: 10px;
-}
 
-img {
-  max-width: 100%;
-  border-radius: 5px;
-}
+    h1 {
+      font-size: 2em; 
+      margin-bottom: 20px;
+      color: #2c3e50; 
+    }
 
-.job-section {
-  margin-bottom: 20px;
-}
+    .photo-container {
+      text-align: center;
+      margin-bottom: 20px; 
+      width: 500px;
+      margin: 0 auto 20px;  
+    }
 
-.job-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: tan;
-}
 
-.job-location {
-    font-size: 1rem;
-    font-weight: bold;
-    color: darkslategrey;
-}
+    .photo-frame {
+      display: inline-block;
+      border: 5px solid #fff;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
 
-.job-responsibilities {
-  margin-top: 10px;
-}
+    .photo-frame img {
+      max-width: 100%;
+      border-radius: 5px;
+      display: block; 
+    }
 
-.job-responsibility {
-  margin-bottom: 5px;
-  text-align: left;
-  font-style: italic;
-}
-</style>
+    .job-section {
+      margin-bottom: 30px; 
+      padding: 20px; 
+      border: 1px solid #eee; 
+      border-radius: 5px;
+      background-color: #fff; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+    }
+
+    .job-title {
+      font-size: 1.9rem; 
+      font-weight: 600; 
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+
+    .job-location {
+      font-size: 1.1rem;
+      color: #7f8c8d; 
+      margin-bottom: 15px;
+    }
+
+    .job-responsibilities {
+      list-style-type: disc; 
+      padding-left: 20px; 
+    }
+
+    .job-responsibility {
+      margin-bottom: 8px; 
+      text-align: left;
+      font-style: normal; 
+      color: #444; 
+    }
+     /* Mobile Responsive Styles */
+     @media (max-width: 768px) {
+      .content-wrapper {
+        width: 90%;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+    
+    }
+  </style>
 
 </head>
 <body>
+  <div class="content-wrapper">
+    <h1>Jobs History</h1>
 
-<h1>Jobs History</h1>
+    <div class="job-section">
+      <h2 class="job-title">Assistant Manager, Maya Gallery</h2>
+      <span class="job-location">Cincinnati OH 2022-2024</span>
+      <ul class="job-responsibilities">
+        <li class="job-responsibility">Customer-facing duties not limited to: sales, inventory, online correspondence
+        </li>
+        <li class="job-responsibility">Detailed knowledge of history, artist techniques, and materials of indigenous
+          Native-American and Mayan art</li>
 
-<div class="photo-container">
-  <div class="photo-frame">
-    <img src="./classphoto.jpg" alt="Your Photo">
+      </ul>
+    </div>
+
+    <div class="job-section">
+      <h2 class="job-title">Self-Employed, Early Childhood Educator</h2>
+      <span class="job-location">Cincinnati OH 2013-2021</span>
+      <ul class="job-responsibilities">
+        <li class="job-responsibility">Balanced a multitude of daily tasks including scheduling, activity and lesson
+          planning and implementation, recording and documentation, and consistent communication with clients in an
+          efficient manner.</li>
+        <li class="job-responsibility">Personally selected by corporate executives, fellow educators and PhD graduates
+          to attend to their families.</li>
+        <li class="job-responsibility">Facilitated seamless communication with clients, committed to continuous
+          improvement and client satisfaction.</li>
+      </ul>
+    </div>
+
+    <div class="job-section">
+      <h2 class="job-title">First Grade Teacher, Impact Academy</h2>
+      <span class="job-location">Cincinnati, OH 2011-2012</span>
+      <ul class="job-responsibilities">
+        <li class="job-responsibility">Managed a classroom of students of a varied spectrum of achievement and grade
+          level to create a synergistic community that broadened cultural and educational horizons. Planned and
+          implemented a rigorous curriculum adhering to State standards.</li>
+      </ul>
+    </div>
+
+    <div class="job-section">
+      <h2 class="job-title">Preschool Teacher, Bright Horizons</h2>
+      <span class="job-location">Cincinnati, OH 2009-2011</span>
+      <ul class="job-responsibilities">
+        <li class="job-responsibility">Selected by administration to lead workshops with fellow colleagues on best
+          practices for client (parent-teacher) relations.</li>
+        <li class="job-responsibility">Targeted by administration to intake high-needs students of various backgrounds
+          (international to special needs) due to professional and interpersonal standards.</li>
+        <li class="job-responsibility">Precise and tailored classroom management for a class of 20, team-taught with
+          assistant educator and dedicated focus to high levels of classroom engagement, discipline and individual
+          improvement.</li>
+      </ul>
+    </div>
   </div>
-</div>
-
-<div class="job-section">
-  <h2 class="job-title">Assistant Manager, Maya Gallery</h2>
-  <span class="job-location">Cincinnati OH 2022-2024</span>
-  <ul class="job-responsibilities">
-    <li class="job-responsibility">Customer-facing duties not limited to: sales, inventory, online correspondence</li>
-    <li class="job-responsibility">Detailed knowledge of history, artist techniques, and materials of indigenous Native-American and Mayan art</li>
-   
-  </ul>
-</div>
-
-<div class="job-section">
-  <h2 class="job-title">Self-Employed, Early Childhood Educator</h2>
-  <span class="job-location">Cincinnati OH 2013-2021</span>
-  <ul class="job-responsibilities">
-    <li class="job-responsibility">Balanced a multitude of daily tasks including scheduling, activity and lesson planning and implementation, recording and documentation, and consistent communication with clients in an efficient manner.</li>
-    <li class="job-responsibility">Personally selected by corporate executives, fellow educators and PhD graduates to attend to their families.</li>
-    <li class="job-responsibility">Facilitated seamless communication with clients, committed to continuous improvement and client satisfaction.</li>
-  </ul>
-</div>
-
-<div class="job-section">
-  <h2 class="job-title">First Grade Teacher, Impact Academy</h2>
-  <span class="job-location">Cincinnati, OH 2011-2012</span>
-  <ul class="job-responsibilities">
-    <li class="job-responsibility">Managed a classroom of students of a varied spectrum of achievement and grade level to create a synergistic community that broadened cultural and educational horizons. Planned and implemented a rigorous curriculum adhering to State standards.</li>
-  </ul>
-</div>
-
-<div class="job-section">
-  <h2 class="job-title">Preschool Teacher, Bright Horizons</h2>
-  <span class="job-location">Cincinnati, OH 2009-2011</span>
-  <ul class="job-responsibilities">
-    <li class="job-responsibility">Selected by administration to lead workshops with fellow colleagues on best practices for client (parent-teacher) relations./li>
-    <li class="job-responsibility">Targeted by administration to intake high-needs students of various backgrounds (international to special needs) due to professional and interpersonal standards.</li>
-    <li class="job-responsibility">Precise and tailored classroom management for a class of 20, team-taught with assistant educator and dedicated focus to high levels of classroom engagement, discipline and individual improvement.</li>
-  </ul>
-</div>
-
 </body>
+
 </html>

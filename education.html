@@ -1,83 +1,159 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Education</title>
-<style>
-body {
-  font-family: 'Gill Sans';
-  background-color: #f0f0f0;
-  background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  color: #333;
-  text-align: center;
-}
+  <title>Education</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', sans-serif;
+      background-color: #f0f0f0;
+      background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-h1 {
-  font-size: 50px;
-  font-weight: bolder;
-  font-family: 'Gill Sans';
-  margin-bottom: 20px;
-  text-align: center;
-}
-.education {
-  margin-top: 30px;
-  text-align: left;
-  color: black;
-}
+    .content-wrapper {
+      width: 80%;
+      max-width: 960px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.55);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-f
-.photo-container {
-  width: auto;
-  border: 8px solid #ccc;
-  border-radius: 5px;
- 
-}
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      text-align: center;
+    }
 
-.photo {
-  width: 100%;
-}
-.button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #007BFF; /* Blue background */
-            color: #fff; /* White text */
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+    .photo-container {
+      text-align: center;
+      margin-bottom: 30px;
+      width: 400px;
+      margin: 0 auto 30px;
+    }
 
-        .button:hover {
-            background-color: #0056b3; 
-        }
-</style>
+    .photo-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: block;
+      margin: 0 auto;
+    }
+
+    .education-history {
+      text-align: center; /* Center the entire education history */
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .school-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      text-align: left; /* Align text within school sections to the left */
+    }
+
+    .school-section h3 {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Distribute space between school name and years */
+        align-items: center; /* Vertically align school name and years */
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .school-section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .school-section li {
+      margin-bottom: 8px;
+    }
+
+    .school-section .years { /* Style for the years span */
+      font-style: italic;
+      color: #777; /* A lighter gray for the years */
+    }
+
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      .content-wrapper {
+        width: 90%;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      .photo-container {
+        width: 90%;
+        margin: 0 auto 20px;
+      }
+
+      .school-section h3 {
+          flex-direction: column; /* Stack school name and years vertically */
+          align-items: flex-start; /* Align to the left */
+      }
+
+      .school-section .years {
+          margin-top: 5px; /* Add some space above the years */
+      }
+
+    }
+  </style>
+
 </head>
+
 <body>
-<div class="h1">
-  <h1>Education</h1>
+  <div class="content-wrapper">
+    <h1>Education</h1>
 
-  <div class="photo-container">
-    <img class="photo" src="./UC pic.jpeg" alt="University of Cincinnati"> 
+    <div class="photo-container">
+      <img src="./assets/uc.jpeg" alt="class">
+    </div>
+
+    <div class="education-history">
+      <div class="school-section">
+        <h3>Kable Academy <span class="years">2025 - In Progress</span></h3>
+        <ul>
+          <li>Cincinnati, OH</li>
+          <li>Web Development</li>
+          <li>AI Coding</li>
+        </ul>
+      </div>
+
+      <div class="school-section">
+        <h3>University of Cincinnati <span class="years">2008</span></h3>
+        <ul>
+          <li>Cincinnati, OH</li>
+          <li>Early Childhood Education</li>
+          <li>Bachelor of Science in Education</li>
+        </ul>
+      </div>
+    </div>
+
+
+
   </div>
-
-    <div class="body">
-    <h2><em>Education History</em><h2>
-      <h3>Kable Academy</h3>
-      <ul>
-        <li>Cincinnati, OH</li>
-        <li>AI Coding</li>
-        <li>2025 - In Progress</li>
-      </ul>
-    
-      <h3>University of Cincinnati<h3>
-      <ul>
-       <li>Cincinnati, OH</li>
-       <li>Early Childhood Education</li>
-       <li>2008, Bachelor of Science in Education</li>
-  
-
-</div>
 </body>
+
 </html>
